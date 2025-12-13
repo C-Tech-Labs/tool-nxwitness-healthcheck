@@ -1,0 +1,12 @@
+# Sample configuration for Nx Witness health check
+
+server_url: http://example-nxwitness.local
+username: admin
+password: changeme
+
+checks:
+  - type: server_status
+  - type: camera_status
+    camera_ids:
+      - cam1
+      - cam2
